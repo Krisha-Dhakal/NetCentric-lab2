@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "MyRazorPage";
+}
+
+<h1>My Razor Page</h1>
+<p>Current Date and Time: @DateTime.Now</p>
+<p>Name and Roll No: Krisha 8</p>
+<p>Multiplication Table of 8 + 1:</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 1; i <= 10; i++)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@(i * (8 + 1))</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

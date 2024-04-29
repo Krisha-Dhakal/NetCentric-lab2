@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+@addTagHelper * , Microsoft.Asp.NetCore.Mvc.TagHelpers
+@model WebApp1ByKrisha.Models.Student;
+<h1>Create Student Record</h1>
+
+<form asp-action="CreateStudent" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="StdID">Student ID</label>
+        <input asp-for="StdID" class="form-control" />
+        <span asp-validation-for="StdID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Faculty"></label>
+        <input asp-for="Faculty" class="form-control" />
+        <span asp-validation-for="Faculty" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>  
