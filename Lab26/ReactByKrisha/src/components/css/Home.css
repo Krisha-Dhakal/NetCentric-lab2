@@ -1,0 +1,14 @@
+.home-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 79vh;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
+}
