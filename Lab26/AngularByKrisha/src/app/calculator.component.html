@@ -1,0 +1,22 @@
+<h2>Calculator</h2>
+<div class="form-group">
+	<label for="num1">Number 1:</label>
+	<input type="number" #num1 name="num1">
+</div>
+<div class="form-group">
+	<label for="num2">Number 2:</label>
+	<input type="number" #num2 name="num2">
+</div>
+<div class="form-group">
+	<label for="operation">Operation:</label>
+	<select #operation name="operation">
+		<option value="add">Add</option>
+		<option value="subtract">Subtract</option>
+		<option value="multiply">Multiply</option>
+	</select>
+</div>
+<button (click)="calculate()" clickable>Compute</button>
+<div class="result">
+	<label>Result:</label>
+	<span>{{ result }}</span>
+</div>
